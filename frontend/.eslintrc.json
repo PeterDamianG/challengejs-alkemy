@@ -16,7 +16,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "prettier", "jest", "cypress"],
+  "plugins": ["react", "prettier", "jest"],
   "rules": {
     "prettier/prettier": [
       "warn",
