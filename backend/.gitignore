@@ -1,0 +1,12 @@
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# documentation
+docs
+
+# files
+.env
+package-lock.json

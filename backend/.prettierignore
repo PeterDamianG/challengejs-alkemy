@@ -1,0 +1,18 @@
+# database
+/prisma
+
+# test rest api
+/src/restclient
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# documentation
+/docs
+
+# files
+.vscode
+.env

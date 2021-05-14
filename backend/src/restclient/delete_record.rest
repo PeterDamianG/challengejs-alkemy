@@ -1,0 +1,3 @@
+DELETE http://localhost:3001/api/records/1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsdGVzdDE1QGdtYWlsLmNvbSIsImlkIjoiYWJjOGNkNGUtMGJlOC00ZmNhLTk3YjctMjAzZGE4MTQ2OTFhIiwiaWF0IjoxNjE5MzgyNDc0fQ.wuII5U9ocwEe18IKROlTAQLCEHBtbi88qiDLu0_Akwk

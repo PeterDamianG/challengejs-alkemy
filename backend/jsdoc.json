@@ -1,0 +1,43 @@
+{
+  "plugins": ["plugins/markdown", "jsdoc-http-plugin"],
+  "recurseDepth": 10,
+  "source": {
+    "include": ["src"],
+    "exclude": [".vscode", "coverage", "node_modules", "prisma", "docs"],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "sourceType": "module",
+  "opts": {
+    "encoding": "utf8",
+    "readme": "./README.md",
+    "destination": "./docs",
+    "tutorials": "./tutorials",
+    "recurse": true,
+    "verbose": true,
+    "template": "./node_modules/clean-jsdoc-theme",
+    "theme_opts": {
+      "theme": "dark",
+      "title": "API Backend",
+      "meta": [
+        {
+          "name": "author",
+          "content": "Peter DG"
+        },
+        {
+          "name": "description",
+          "content": "Documentation about API Backend ChallengeJS Alkemy"
+        }
+      ],
+      "footer": "<footer>Copyright © 2021. All rights reserved. All trademarks are property of their respective owners in the US and other countries. By Peter Damian G.</footer>"
+    }
+  },
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "name": "@peterdg/app-frontend-challengejs-alkemy",
+  "version": "0.1.0",
+  "description": "A FrontEnd APP for the challengejs from alkemy.",
+  "keywords": [
+    "challengejs",
+    "APP",
+    "frontend",
+    "react",
+    "chakra"
+  ],
+  "author": "Peter Damian Gómez <PeterDamianG@Gmail.com> (https://github.com/PeterDamianG)",
+  "license": "MIT",
+  "dependencies": {
+    "@chakra-ui/icons": "^1.0.8",
+    "@chakra-ui/react": "^1.4.2",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
+    "framer-motion": "^4.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^3.11.0",
+    "react-scripts": "4.0.3",
+    "react-table": "^7.6.3",
+    "web-vitals": "^0.2.4",
+    "wouter": "^2.7.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "eslint": "eslint src/**/*.{js,jsx}",
+    "eslint-fix": "eslint src/**/*.{js,jsx} --fix",
+    "prettier": "prettier --write . && prettier --check .",
+    "test": "react-scripts test --watchAll=false",
+    "test-coverage": "npm test -- --coverage --verbose --runInBand",
+    "see-coverage": "cd coverage/lcov-report && index.html",
+    "docs": "jsdoc -c jsdoc.json",
+    "see-docs": "cd docs && index.html"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 6 chrome version",
+      "last 6 firefox version",
+      "last 6 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^10.4.9",
+    "@testing-library/user-event": "^12.8.3",
+    "better-docs": "^2.3.2",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
+    "jsdoc": "^3.6.6",
+    "prettier": "^2.2.1"
+  },
+  "proxy": "http://localhost:3001/"
+}

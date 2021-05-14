@@ -1,0 +1,11 @@
+POST http://localhost:3001/api/records
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsdGVzdDE1QGdtYWlsLmNvbSIsImlkIjoiYWJjOGNkNGUtMGJlOC00ZmNhLTk3YjctMjAzZGE4MTQ2OTFhIiwiaWF0IjoxNjE5MzgxODQ0fQ.veAaUY-VB5KCRujuEbPvzjvuEdq7Vkm00zlOqBM6QJ8
+
+{
+    "concept": "new record 01",
+    "amount": 2000,
+    "category": "House",
+    "isIncome": false,
+    "date": "2012-01-01"
+}

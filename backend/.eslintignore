@@ -1,0 +1,11 @@
+# database
+/prisma
+
+# test rest api
+/src/restclient
+
+# testing
+/coverage
+
+# documentation
+/docs

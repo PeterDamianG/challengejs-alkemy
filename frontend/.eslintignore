@@ -1,0 +1,12 @@
+# testing
+/coverage
+
+# documentation
+/docs
+
+# config enviroment
+/.vscode
+
+# generic
+/build
+/public

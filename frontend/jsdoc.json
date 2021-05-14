@@ -1,0 +1,37 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "recurseDepth": 10,
+  "source": {
+    "include": ["src"],
+    "exclude": [
+      ".vscode",
+      "coverage",
+      "node_modules",
+      "public",
+      "docs",
+      ".husky"
+    ],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "better-docs": {
+      "name": "Frontend React Components"
+    }
+  },
+  "opts": {
+    "encoding": "utf8",
+    "destination": "docs",
+    "recurse": true,
+    "readme": "README.md",
+    "tutorials": "./tutorials",
+    "verbose": true,
+    "template": "node_modules/better-docs"
+  }
+}

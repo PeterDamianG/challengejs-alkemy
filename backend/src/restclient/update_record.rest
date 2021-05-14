@@ -1,0 +1,11 @@
+PATCH http://localhost:3001/api/records/39
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsdGVzdDNAZ21haWwuY29tIiwiaWQiOiJmOGNkODAzNi1lZTNhLTRlYjAtYWNkNy03Y2Q4ZGRkMTUzZmEiLCJpYXQiOjE2MTkzODA5MTF9.dN59pflzVAr84C8wyucOgXllmrIxeHdOJFVLfZQjpS8
+
+{
+    "concept": "new record 39",
+    "amount": 4000,
+    "category": "Gas",
+    "isIncome": false,
+    "date": "2011-01-01"
+}

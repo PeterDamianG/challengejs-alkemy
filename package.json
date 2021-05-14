@@ -1,0 +1,24 @@
+{
+  "name": "@peterdg/challengejs-alkemy",
+  "version": "0.1.0",
+  "description": "A complete app and api from challengejs from alkemy.",
+  "author": "Peter Damian Gómez <PeterDamianG@Gmail.com> (https://github.com/PeterDamianG)",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "install-api": "cd backend && npm install",
+    "install-app": "cd frontend && npm install",
+    "install-all": "npm run install-api && npm run install-app && npm install",
+    "fix-env-api": "cd backend && ren .env.example .env",
+    "fix-env-app": "cd frontend && ren .env.example .env",
+    "fix-env": "npm run fix-env-api && npm run fix-env-app",
+    "build-app": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "start-dev": "cd backend && npm run dev",
+    "start-test": "cd backend && npm run start-test",
+    "cypress": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^7.2.0"
+  }
+}

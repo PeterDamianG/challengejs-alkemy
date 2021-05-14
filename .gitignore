@@ -1,0 +1,10 @@
+# dependencies
+/node_modules
+
+# files
+package-lock.json
+
+# cypress
+cypress/downloads
+cypress/screenshots
+cypress/videos
