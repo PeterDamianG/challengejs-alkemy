@@ -5,17 +5,20 @@
   "author": "Peter Damian Gómez <PeterDamianG@Gmail.com> (https://github.com/PeterDamianG)",
   "license": "MIT",
   "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
   "scripts": {
     "install-api": "cd backend && npm install",
-    "install-app": "cd frontend && npm install",
-    "install-all": "npm run install-api && npm run install-app && npm install",
+    "install-all": "npm install --legacy-peer-deps && npm run install-api",
     "fix-env-api": "cd backend && ren .env.example .env",
     "fix-env-app": "cd frontend && ren .env.example .env",
     "fix-env": "npm run fix-env-api && npm run fix-env-app",
-    "build-app": "cd frontend && npm run build",
-    "start": "cd backend && npm start",
-    "start-dev": "cd backend && npm run dev",
-    "start-test": "cd backend && npm run start-test",
+    "build-app": "npm run build --workspace=frontend",
+    "start": "npm start --workspace=backend",
+    "start-dev": "npm run dev --workspace=backend",
+    "start-test": "npm run start-test --workspace=backend",
     "cypress": "cypress open"
   },
   "devDependencies": {

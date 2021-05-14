@@ -43,11 +43,12 @@ El desafío elegido es el de <b>"Challenge JS"</b>, que puede observarse en la w
 
 `npm run install-all`
 
-<b>Anotación:</b> Serán descargadas en sus correspondiente lugar la parte del frontend, backend y cypress para el testeo e2e. Por esa razón este proceso puede llegar a demorar bastante.
+<b>Anotación:</b> Serán descargadas las dependencias usando el sistema de workspaces de NPM. Debes tener versión 7 o superior del mismo. Luego en la parte de API, para evitar problemas con el type=module, se descargarán sus dependencias por separado.
+Por esa razón este proceso puede llegar a demorar bastante.
 
 4. Ahora necesitamos configurar el entorno, tanto para el backend como el frontend. Tienes dos opciones:
 
-4.1 - Manualmente ir a la carpeta de <b>"frontend"</b> y la de <b>"backend"</b>. En ambas observaras un archivo <b>.env.example</b>. Basta con borrar la extensión <b>.example</b> y que el archivo quede como <b>.env</b> con ese alcanzaría.
+4.1 - Manualmente ir a la carpeta de <b>"frontend"</b> y la de <b>"backend"</b>. En ambas observaras un archivo <b>.env.example</b>. Tienes que borrar la extensión <b>.example</b> y que el archivo quede como <b>.env</b> con ese alcanzaría.
 
 4.2 - Automaticamente con el siguiente comando, podría no funcionar en todos los sistemas operativos. (No funcionara en una <b>Mac - Apple</b>):
 
@@ -73,13 +74,9 @@ La aplicación comenzara a funcionar en [LocalHost](http://localhost:3001/).
 
 Se encarga de instalar todas las dependencias de la <b>API (BackEnd).</b> Es para uso interno, no debería ser necesario su llamado individual.
 
-### npm run install-app
-
-Se encarga de instalar todas las dependencias de la <b>APP (FronEnd).</b> Es para uso interno, no debería ser necesario su llamado individual.
-
 ### npm run install-all
 
-Se encarga de instalar todas las dependencias de la <b>APP (FronEnd), API (BackEnd) y Cypress</b> de este contenedor. Es el comando que engloba todas las llamadas de instalación, es el que se debería usar normalmente.
+Se encarga de instalar todas las dependencias de la <b>APP (FronEnd), API (BackEnd) y Cypress</b> de este contenedor. Es el comando que engloba todas las llamadas de instalación con el flag --legacy-peer-deps, es el que se debería usar normalmente.
 
 ### npm run fix-env-api
 
@@ -128,8 +125,6 @@ El <b>FrontEnd</b>, construido con <b>React.</b> Que puede funcionar independien
 El <b>BackEnd</b>, construido en <b>Express.</b> Que puede funcionar independiente proveyendo una <b>API</b> para que clientes usen, con un estilo similar a una <b>API REST</b>. Puedes observar todo su desarrollo independiente en el folder <b>"backend".</b>
 
 Y por último este paquete TOP-LEVEL, que se encargara funcionar como un <b>WorkSpace.</b> Aprovechando su condición de empaquetador/contenedor/workspace, también se utiliza para realizar las pruebas <b>end to end.</b>
-
-<b>PD:</b> Este "contenedor", se cambiara al nuevo sistemas de Workspaces provisto, en <b>NPM</b> versión 7 y superiores. <b>Proximamente.</b>
 
 ---
 
