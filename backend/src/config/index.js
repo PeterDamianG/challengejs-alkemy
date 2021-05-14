@@ -2,7 +2,6 @@ import 'dotenv/config.js';
 
 export const {
   PORT,
-  DATABASE_URL,
   SECRET,
   DATABASE_URL_PROD,
   DATABASE_URL_DEV,
