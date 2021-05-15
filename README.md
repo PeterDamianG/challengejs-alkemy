@@ -19,7 +19,7 @@
 ### ¿Qué es esto? <a name="what"></a>
 
 En el marco de el desafío <b>"Challenge JS"</b> sobre Javascript propuesto por <b>Alkemy</b>.
-Este es un contenedor para la APP, la API y pruebas e2e.
+Este es un contenedor/workspace para la APP, la API y pruebas e2e.
 
 [Alkemy](https://www.alkemy.org/) - - - [Alkemy Challenges](https://www.alkemy.org/challenges)
 
@@ -43,12 +43,11 @@ El desafío elegido es el de <b>"Challenge JS"</b>, que puede observarse en la w
 
 `npm run install-all`
 
-<b>Anotación:</b> Serán descargadas las dependencias usando el sistema de workspaces de NPM. Debes tener versión 7 o superior del mismo. Luego en la parte de API, para evitar problemas con el type=module, se descargarán sus dependencias por separado.
-Por esa razón este proceso puede llegar a demorar bastante.
+<b>Anotación:</b> Usando el sistema de workspace, todas las dependencias serán instalas juntas. Y además se pasará una bandera <b>--legacy-peer-deps</b>, para evitar problemas conocidos con <b>NPM</b> versión 7, es necesario tener la misma o superior. También el comando iniciara automaticamente, nuestro <b>ORM Prisma</b>.
 
 4. Ahora necesitamos configurar el entorno, tanto para el backend como el frontend. Tienes dos opciones:
 
-4.1 - Manualmente ir a la carpeta de <b>"frontend"</b> y la de <b>"backend"</b>. En ambas observaras un archivo <b>.env.example</b>. Tienes que borrar la extensión <b>.example</b> y que el archivo quede como <b>.env</b> con ese alcanzaría.
+4.1 - Manualmente ir a la carpeta de <b>"frontend"</b> y la de <b>"backend"</b>. En ambas observaras un archivo <b>.env.example</b>. Tienes que borrar la extensión <b>.example</b> y que el archivo quede como <b>.env</b> con ese bastaría.
 
 4.2 - Automaticamente con el siguiente comando, podría no funcionar en todos los sistemas operativos. (No funcionara en una <b>Mac - Apple</b>):
 
@@ -70,21 +69,21 @@ La aplicación comenzara a funcionar en [LocalHost](http://localhost:3001/).
 
 ## Scripts Disponibles de este contenedor <a name="scripts"></a>
 
-### npm run install-api
+### npm run prisma
 
-Se encarga de instalar todas las dependencias de la <b>API (BackEnd).</b> Es para uso interno, no debería ser necesario su llamado individual.
+Se encarga de inicializar el <b>ORM Prisma</b> Es para uso interno, no debería ser necesario su llamado individual.
 
 ### npm run install-all
 
-Se encarga de instalar todas las dependencias de la <b>APP (FronEnd), API (BackEnd) y Cypress</b> de este contenedor. Es el comando que engloba todas las llamadas de instalación con el flag --legacy-peer-deps, es el que se debería usar normalmente.
+Se encarga de instalar todas las dependencias de la <b>APP (FronEnd), API (BackEnd) y Cypress</b> de este contenedor. Es el comando que engloba todas las llamadas de instalación con el flag --legacy-peer-deps e inicialización del <b>ORM Prisma</b>, es el que se debería usar normalmente.
 
 ### npm run fix-env-api
 
-Se encarga de reemplazar el nombre del archivo de enterno en la <b>API</b>. Es para uso interno, no debería ser necesario su llamado individual.
+Se encarga de reemplazar el nombre del archivo de entorno en la <b>API</b>. Es para uso interno, no debería ser necesario su llamado individual.
 
 ### npm run fix-env-app
 
-Se encarga de reemplazar el nombre del archivo de enterno en la <b>APP</b>. Es para uso interno, no debería ser necesario su llamado individual.
+Se encarga de reemplazar el nombre del archivo de entorno en la <b>APP</b>. Es para uso interno, no debería ser necesario su llamado individual.
 
 ### npm run fix-env
 
@@ -92,9 +91,9 @@ Se encarga de llamar los comandos que reemplazan los archivos de entorno. Es el 
 
 ### npm run build-app
 
-Se encarga de construir la aplicación en <b>React</b>, si vas a iniciar la aplicación como un TODO. Deberías usar este comando para construirla, pero no difiere de usar el comando original que se encuentra en el desarrollo del <b>FrontEnd.</b>
+Se encarga de construir la aplicación en <b>React</b>, sí vas a iniciar la aplicación desde el paquete workspace de este proyecto. Deberías usar este comando para construirla, pero no difiere de usar el comando original que se encuentra en el desarrollo del <b>FrontEnd.</b>
 
-### npm start
+### npm run start o npm start
 
 Se levantara la <b>API</b>, que servira los estáticos generados con <b>React</b>. Usará el modo de producción de <b>Node</b>, <b>Prisma</b> y la base de datos <b>SQLite</b> también será la de producción. Estando en este modo, todo estara optimizado, pero el mal manejo de la base de datos puede generar grandes daños.
 
@@ -104,7 +103,7 @@ Se levantara la <b>API</b>, que servira los estáticos generados con <b>React</b
 
 ### npm run start-test
 
-Se levantara la <b>API</b>, que servira los estáticos generados con <b>React</b>. Usará el modo de pruebas de <b>Node</b>, <b>Prisma</b> y la base de datos <b>SQLite</b> también será la de pruebas. El uso recomendado es con <b>Cypress.</b> También se utiliza para las pruebas en el <b>BackEnd</b>.
+Se levantara la <b>API</b>, que servira los estáticos generados con <b>React</b>. Usará el modo de pruebas de <b>Node</b>, <b>Prisma</b> y la base de datos <b>SQLite</b> también será la de pruebas. El uso recomendado es con <b>Cypress.</b> También se utiliza para las pruebas en el <b>BackEnd</b> (Las usará el por sí mismo, no necesitaras levatar este comando).
 
 ### npm run cypress
 
@@ -112,7 +111,7 @@ Levantara el <b>test-runner</b> de <b>Cypress</b> en modo con cabecera. Es neces
 
 ---
 
-<b>Aclaración:</b> Los comandos mencionados previamente, sólo se constituyen a este parte del proyecto. El <b>BackEnd</b> y <b>FrontEnd</b>, respectivamente tienen sus propios comandos para funciones internas y externas. Como linters, pruebas y levantarse.
+<b>Aclaración:</b> Los comandos mencionados previamente, sólo se constituyen a este parte del proyecto. El <b>BackEnd</b> y <b>FrontEnd</b>, respectivamente tienen sus propios comandos para funciones internas y externas. Como linters, pruebas, generar documentación y levantarse.
 
 ---
 
@@ -124,7 +123,7 @@ El <b>FrontEnd</b>, construido con <b>React.</b> Que puede funcionar independien
 
 El <b>BackEnd</b>, construido en <b>Express.</b> Que puede funcionar independiente proveyendo una <b>API</b> para que clientes usen, con un estilo similar a una <b>API REST</b>. Puedes observar todo su desarrollo independiente en el folder <b>"backend".</b>
 
-Y por último este paquete TOP-LEVEL, que se encargara funcionar como un <b>WorkSpace.</b> Aprovechando su condición de empaquetador/contenedor/workspace, también se utiliza para realizar las pruebas <b>end to end.</b>
+Y por último este paquete contenedor, que se encargara de funcionar como un <b>WorkSpace.</b> Aprovechando su condición de empaquetador/contenedor/workspace, también se utiliza para realizar las pruebas <b>end to end.</b>
 
 ---
 
