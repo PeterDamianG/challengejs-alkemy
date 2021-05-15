@@ -33,7 +33,7 @@ En está parte del repositorio se encuentra la parte relacionada al <b>Backend</
 
 `npm install`
 
-Y listo, el siguiente comando es para correr la API en modo de desarrollo:
+Y listo, el siguiente comando es para correr la <b>API</b> en modo de desarrollo:
 
 `npm run dev`
 
@@ -41,53 +41,57 @@ Y listo, el siguiente comando es para correr la API en modo de desarrollo:
 
 ## Scripts Disponibles <a name="scripts"></a>
 
-### npm run start
+### npm run start o npm start
 
-Inicia la API en modo de producción. El rendimiento será mayor, pero la consola no tendrá habilitada el modo verboso. Se usara la base de datos principal, ¡Cuidado!
+Inicia la <b>API</b> en modo de producción. El rendimiento será mayor, pero la consola no tendrá habilitada el modo verboso. Se usara la base de datos principal, <b>¡Cuidado!</b>
 
 ### npm run dev
 
-Inicia la API en modo de desarrollo. Se utiliza para el desarrollo de la API, utiliza la base de datos de desarrollo. Recomendada usar está.
+Inicia la <b>API</b> en modo de desarrollo. Se utiliza para el desarrollo de la <b>API</b>, utiliza la base de datos de desarrollo. Recomendada usar está.
 
 ### npm run lint-fix
 
-Se le pasa la herramienta ESLint a los ficheros del proyecto y se corregiran errores. Generalmente para uso interno. No es necesario llamarlo manualmente.
+Se le pasa la herramienta <b>ESLint</b> a los ficheros del proyecto y se corregiran errores. Generalmente para uso interno. No es necesario llamarlo manualmente.
 
 ### npm run prettier
 
-Se le pasa la herramienta Prettier a los ficheros del proyecto y se corregiran errores. Generalmente para uso interno. No es necesario llamarlo manualmente.
+Se le pasa la herramienta <b>Prettier</b> a los ficheros del proyecto y se corregiran errores. Generalmente para uso interno. No es necesario llamarlo manualmente.
 
 ### npm run linters
 
-Se llama a los linters conjuntamente para hacer un barrido completo en los archivos. De uso común y necesario. Se usa internamente con Husky.
+Se llama a los linters conjuntamente para hacer un barrido completo en los archivos. De uso común y necesario. Se usa internamente con <b>Husky</b>.
 
 ### npm run test
 
-Se correrán los test con la herramienta JEST y sus pluggins y dependencias. Es el comando para el usuario normal.
+Se correrán los test con la herramienta <b>JEST</b> y sus pluggins y dependencias. Es el comando para el usuario normal.
 
 ### npm run test-watch
 
-Se correrán los test con la herramienta JEST y sus pluggins y dependencias. La diferencia con el anterior, es que usa la bandera --watch. La cual permitira mantener observado los ficheros mientras se realizan cambios a los ficheros.
+Se correrán los test con la herramienta <b>JEST</b> y sus pluggins y dependencias. La diferencia con el anterior, es que usa la bandera <b>--watch</b>. La cual permitira mantener observado los ficheros mientras se realizan cambios a los mismos.
 
 ### npm run test-for-husky
 
-Herramienta interna para correr los test, con la herramienta de Husky. No debe ser llamado por el usuario.
+Herramienta interna para correr los test, con la herramienta de <b>Husky</b>. No debe ser llamado por el usuario.
 
 ### npm run test-coverage
 
-Se genera un carpeta de covertura porcentual con los test realizados, usando la herramienta de JEST. La carpeta por defecto generada será llamada "coverage", dentro de "lcov-report" un fichero estático "index.js" será generado para abrir con su navegador favorito.
+Se genera un carpeta de covertura porcentual con los test realizados, usando la herramienta de <b>JEST</b>. La carpeta por defecto generada será llamada <b>"coverage"</b>, dentro de "lcov-report" un fichero estático "index.js" será generado para abrir con su navegador favorito.
 
 ### npm run see-coverage
 
-Comando atajo, para acceder al index.html generado para observar el coverage de los testing en Jest.
+Comando atajo, para acceder al <b>index.html</b> generado para observar el coverage de los testing en <b>Jest</b>.
 
 ### npm run docs
 
-Se genera un carpeta de documentación, usando la herramienta de JSDOC. La carpeta por defecto generada será llamada "docs", dentro habrá fichero estático "index.js" será generado para abrir con su navegador favorito.
+Se genera un carpeta de documentación, usando la herramienta de <b>JSDOC</b>. La carpeta por defecto generada será llamada "docs", dentro habrá fichero estático "index.js" será generado para abrir con su navegador favorito.
 
 ### npm run see-docs
 
-Comando atajo, para acceder al index.html generado para observar la documentacion por la herramienta JSDOC.
+Comando atajo, para acceder al index.html generado para observar la documentacion por la herramienta <b>JSDOC</b>.
+
+### npm run prisma
+
+Comando que se encarga de generar los archivos necesarios para el <b>ORM Prisma</b>. No es necesario su uso manual, debería llamarse desde el contenedor/workspace.
 
 ---
 
