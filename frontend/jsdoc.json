@@ -32,6 +32,6 @@
     "readme": "README.md",
     "tutorials": "./tutorials",
     "verbose": true,
-    "template": "node_modules/better-docs"
+    "template": ".././node_modules/better-docs"
   }
 }
