@@ -52,7 +52,8 @@
     "test-coverage": "cross-env NODE_OPTIONS=--experimental-vm-modules NODE_ENV=test jest --coverage --verbose --runInBand",
     "see-coverage": "cd coverage/lcov-report && index.html",
     "docs": "jsdoc -c jsdoc.json",
-    "see-docs": "cd docs && index.html"
+    "see-docs": "cd docs && index.html",
+    "prisma": "prisma generate"
   },
   "type": "module"
 }
