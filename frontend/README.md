@@ -21,11 +21,11 @@ En está parte del repositorio se encuentra la parte relacionada al <b>Frontend<
 
 ---
 
-## Obtener API <a name="create"></a>
+## Obtener APP <a name="create"></a>
 
-##### Debemos tener la base de este GIT clonado:
+##### Sigue los siguientes pasos:
 
-1. En tu consola favorita:
+En tu consola favorita:
 
 `git clone https://github.com/PeterDamianG/challengejs-alkemy.git`
 
@@ -41,49 +41,49 @@ Y listo, el siguiente comando es para correr la APP en modo de desarrollo:
 
 ## Scripts Disponibles <a name="scripts"></a>
 
-### npm run start or npm start
+### npm run start o npm start
 
-Inicia la APP en modo de desarrollo. Se utiliza para el desarrollo de la APP, utiliza la base de datos de desarrollo.
+Inicia la <b>APP</b> en modo de desarrollo. Se utiliza para el desarrollo de la <b>APP</b>.
 
 ### npm run build
 
-Construye los ficheros estaticos para ser utilizados posteriormente, el resultado se encontrara en la carpeta /build.
+Construye los ficheros estaticos para ser utilizados posteriormente, el resultado se encontrara en la carpeta <b>"build"</b>.
 
 ### npm run eject
 
-Comando heredado de React, para expulsar las configuraciones para poder controlarlas de forma manual. NO RECOMENDADO. NO USARLA A MENOS QUE SE ENTIENDA CORRECTAMENTE LO QUE SE ESPERA.
+Comando heredado de <b>React</b>, para expulsar las configuraciones para poder controlarlas de forma manual. <b>NO RECOMENDADO. NO USARLA A MENOS QUE SE ENTIENDA CORRECTAMENTE LO QUE SE ESPERA.</b>
 
 ### npm run eslint
 
-Se le pasa la herramienta ESLint a los ficheros del proyecto. Se puede usar para observar los errores marcados por el linter. Generalmente para uso interno. No es necesario llamarlo manualmente.
+Se le pasa la herramienta <b>ESLint</b> a los ficheros del proyecto. Se puede usar para observar los errores marcados por el linter. Generalmente para uso interno. No es necesario llamarlo manualmente.
 
 ### npm run eslint-fix
 
-Se le pasa la herramienta ESLint a los ficheros del proyecto y se corregiran errores. Corregira sólo los errores que pueda. Generalmente para uso interno. No es necesario llamarlo manualmente.
+Se le pasa la herramienta <b>ESLint</b> a los ficheros del proyecto y se corregiran errores. Corregira sólo los errores que pueda. Generalmente para uso interno. No es necesario llamarlo manualmente.
 
 ### npm run prettier
 
-Se le pasa la herramienta Prettier a los ficheros del proyecto y se corregiran errores. Generalmente para uso interno. No es necesario llamarlo manualmente.
+Se le pasa la herramienta <b>Prettier</b> a los ficheros del proyecto y se corregiran errores. Generalmente para uso interno. No es necesario llamarlo manualmente.
 
 ### npm run test
 
-Se correrán los test con la herramienta JEST, sus pluggins y dependencias. Tiene desactivado el modo watch.
+Se correrán los test con la herramienta <b>JEST</b>, sus pluggins y dependencias. Tiene desactivado el modo <b>watch.</b>
 
 ### npm run test-coverage
 
-Se genera un carpeta de covertura porcentual con los test realizados, usando la herramienta de JEST. La carpeta por defecto generada será llamada "coverage", dentro de "lcov-report" un fichero estático "index.js" será generado para abrir con su navegador favorito.
+Se genera un carpeta de covertura porcentual con los test realizados, usando la herramienta de <b>JEST.</b> La carpeta por defecto generada será llamada "coverage", dentro de "lcov-report" un fichero estático "index.js" será generado para abrir con su navegador favorito.
 
 ### npm run see-coverage
 
-Comando atajo, para acceder al index.html generado para observar el coverage de los testing en Jest.
+Comando atajo, para acceder al index.html generado para observar el coverage de los testing en <b>Jest.</b>
 
 ### npm run docs
 
-Se genera un carpeta de documentación, usando la herramienta de JSDOC. La carpeta por defecto generada será llamada "docs", dentro habrá fichero estático "index.js" será generado para abrir con su navegador favorito.
+Se genera un carpeta de documentación, usando la herramienta de <b>JSDOC.</b> La carpeta por defecto generada será llamada "docs", dentro habrá fichero estático "index.js" será generado para abrir con su navegador favorito.
 
 ### npm run see-docs
 
-Comando atajo, para acceder al index.html generado para observar la documentacion por la herramienta JSDOC.
+Comando atajo, para acceder al index.html generado para observar la documentacion por la herramienta <b>JSDOC.</b>
 
 ---
 
