@@ -10,7 +10,7 @@
     "frontend"
   ],
   "scripts": {
-    "prisma": "npm run prisma --workspace=backend"",
+    "prisma": "npm run prisma --workspace=backend",
     "install-all": "npm install --legacy-peer-deps && npm run prisma",
     "fix-env-api": "cd backend && ren .env.example .env",
     "fix-env-app": "cd frontend && ren .env.example .env",
