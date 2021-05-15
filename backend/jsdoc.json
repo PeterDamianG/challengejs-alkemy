@@ -15,7 +15,7 @@
     "tutorials": "./tutorials",
     "recurse": true,
     "verbose": true,
-    "template": "./node_modules/clean-jsdoc-theme",
+    "template": ".././node_modules/clean-jsdoc-theme",
     "theme_opts": {
       "theme": "dark",
       "title": "API Backend",
