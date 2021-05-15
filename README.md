@@ -12,7 +12,8 @@
 3. [Scripts Disponibles de este contenedor](#scripts)
 4. [Explicación en Profundidad](#deep)
 5. [Imagenes del Proyecto](#img)
-6. [Licencia](#license)
+6. [Bugs](#bugs)
+7. [Licencia](#license)
 
 ---
 
@@ -127,7 +128,7 @@ Y por último este paquete contenedor, que se encargara de funcionar como un <b>
 
 ---
 
-#### Imagenes del Proyecto Corriendo <a name="img"></a>
+#### Imagenes del Proyecto <a name="img"></a>
 
 ![Home Logout](img/home-logout.jpg)
 ![Login](img/login.jpg)
@@ -136,6 +137,14 @@ Y por último este paquete contenedor, que se encargara de funcionar como un <b>
 ![List Record](img/list-record.jpg)
 ![Create Record](img/create-record.jpg)
 ![Edit/Remove Record](img/edit-remove-record.jpg)
+
+---
+
+#### Bugs - Errores y Problemas <a name="bugs"></a>
+
+Los <b>Workspaces</b>, son una tecnología relativamente nueva a la fecha. Se ha optado por usar está, para este proyecto y no los <b>"submodules".</b> En consecuencia, pueden ocurrir problemas de dependencias cruzadas y rutas relacionadas.
+
+En algunos casos, quedan resultos con la instalación pasandole el flag <b>--legacy-peer-deps</b> en otros el <b>--force</b>, aunque acarrean problemas internos de compleja resolución. Más que nada porque corresponden a la versión 7 de NPM y escapa a nuestras capacidades.
 
 ---
 
