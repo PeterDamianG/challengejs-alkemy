@@ -144,15 +144,15 @@ Y por último este paquete contenedor, que se encargara de funcionar como un <b>
 
 Los <b>Workspaces</b>, son una tecnología relativamente nueva a la fecha. Se ha optado por usar está, para este proyecto y no los <b>"submodules".</b> En consecuencia, pueden ocurrir problemas de dependencias cruzadas y rutas relacionadas.
 
-En algunos casos, quedan resultos con la instalación pasandole el flag <b>--legacy-peer-deps</b> en otros el <b>--force</b>, aunque acarrean problemas internos de compleja resolución. Más que nada porque corresponden a la versión 7 de NPM y escapa a nuestras capacidades.
+En algunos casos, quedan resueltos con la instalación pasandole el flag <b>--legacy-peer-deps</b> en otros el <b>--force</b>, aunque acarrean problemas internos de compleja resolución. Más que nada porque corresponden a la versión <b>7 de NPM</b> y escapa a nuestras capacidades.
 
 ---
 
 #### Aclaración pertinente
 
-No se pretende, realizar un proyecto listo para producción, donde haya un coverage de testing de alto porcentaje. Un uso extensivo y profundo de caracteristicas de React como useMemo, useCallback y React.Memo, más que lo minimo necesario. Y tampoco el uso de la API Profiler.
+No se pretende, realizar un proyecto listo para producción en optima condición, donde haya un <b>coverage de testing de alto porcentaje.</b> Un uso extensivo y profundo de carácteristicas de <b>React</b> como <b>useMemo, useCallback y React.Memo,</b> más que lo mínimo necesario. Y tampoco el uso de la <b>API Profiler.</b>
 
-El objectivo es general un MVP, un Producto Mínimo Viable que sirva como demostración.
+El objectivo es generar un <b>MVP, un Producto Mínimo Viable</b> que sirva como demostración.
 
 ---
 
