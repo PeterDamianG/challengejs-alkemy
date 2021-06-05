@@ -131,11 +131,9 @@ Y por último este paquete contenedor, que se encargara de funcionar como un <b>
 
 #### Resumen Explicativo en Video, Continuación del Desafío <a name="video"></a>
 
-[Video](https://www.youtube.com/watch?v=iWzPz-VCxcc "Challenge JS FullStack Alkemy")
+[Link To Video](https://www.youtube.com/watch?v=iWzPz-VCxcc "Challenge JS FullStack Alkemy")
 
-<figure class="video_container">
-  <iframe src="https://www.youtube.com/watch?v=iWzPz-VCxcc" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
+[![Image Video](http://img.youtube.com/vi/iWzPz-VCxcc/0.jpg)](http://www.youtube.com/watch?v=iWzPz-VCxcc "Video Title")
 
 ---
 
