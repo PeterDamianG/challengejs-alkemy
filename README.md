@@ -11,9 +11,10 @@
 2. [Instalar y Correr la Aplicación](#run)
 3. [Scripts Disponibles de este contenedor](#scripts)
 4. [Explicación en Profundidad](#deep)
-5. [Imagenes del Proyecto](#img)
-6. [Bugs](#bugs)
-7. [Licencia](#license)
+5. [Resumen Explicativo en Video, Continuación del Desafío](#video)
+6. [Imagenes del Proyecto](#img)
+7. [Bugs](#bugs)
+8. [Licencia](#license)
 
 ---
 
@@ -125,6 +126,16 @@ El <b>FrontEnd</b>, construido con <b>React.</b> Que puede funcionar independien
 El <b>BackEnd</b>, construido en <b>Express.</b> Que puede funcionar independiente proveyendo una <b>API</b> para que clientes usen, con un estilo similar a una <b>API REST</b>. Puedes observar todo su desarrollo independiente en el folder <b>"backend".</b>
 
 Y por último este paquete contenedor, que se encargara de funcionar como un <b>WorkSpace.</b> Aprovechando su condición de empaquetador/contenedor/workspace, también se utiliza para realizar las pruebas <b>end to end.</b>
+
+---
+
+#### Resumen Explicativo en Video, Continuación del Desafío <a name="video"></a>
+
+[Video](https://www.youtube.com/watch?v=iWzPz-VCxcc "Challenge JS FullStack Alkemy")
+
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/watch?v=iWzPz-VCxcc" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
 
 ---
 
